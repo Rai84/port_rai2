@@ -297,15 +297,12 @@ body.claro {
 
 
 
-
-@media screen and (max-width: 1500px) and (min-width: 900px){
-
-}
-
-@media screen and (max-width: 900px) and (min-width: 600px) {
-
-}
-
-@media screen and (max-width: 600px) and (min-width: 0px){
-    
+@media screen and (max-width: 767px){
+    .tela{
+        position: relative;
+        width: calc(100vw - 55px);
+        height: calc(100vh - 5vh);
+        left: 19px;
+        z-index: -2;
+    }
 } 
