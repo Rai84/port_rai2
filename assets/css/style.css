@@ -132,7 +132,7 @@ body.claro {
 /***********************************************************menu__tema***/
 
 .menu__tema{
-    position: static;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,7 +307,7 @@ body.claro {
         justify-content: center;
         height: 50px;
         color: var(--cor-branco);
-        bottom: 10vh;
+        bottom: 8vh;
     }
 }
 
