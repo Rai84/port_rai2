@@ -138,7 +138,7 @@ body.claro {
     justify-content: center;
     height: 50px;
     color: var(--cor-branco);
-
+    bottom: 1vh;
 }
 
 .config__icon {
@@ -153,7 +153,7 @@ body.claro {
 .config__exp{
     display: none;
     position: fixed;
-    top: 80vh;
+    bottom: 2vh;
     left: 50px;
     width: 125px;
     height: 125px;
