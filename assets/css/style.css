@@ -106,13 +106,14 @@ body.claro {
 
 /*************************************************************menu__exp***/
 .menu__exp{ 
-    position: static;
+    position: fixed;
     background-color: var(--cor-7);
     width: 20px; height: 80px;
     border-radius: 50px;
     display: flex; align-items: center;
     justify-content: center;
     z-index: -1;
+    top: 50vh;
 }
 
 .expandido {
