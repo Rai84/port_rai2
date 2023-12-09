@@ -307,7 +307,7 @@ body.claro {
         z-index: -2;
     } */
 
-    .menu{
+    /* .menu{
         width: 36px;
         height: 95vh;
         background-color: var(--cor-6);
@@ -320,7 +320,7 @@ body.claro {
         position: fixed;
         border-right: solid 1px;
         border-color: var(--cor-7);
-    }
+    } */
 
     .menu__tema{
         position: fixed;
