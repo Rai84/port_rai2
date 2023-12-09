@@ -55,7 +55,7 @@ body.claro {
     width: 36px;
     height: 100%;
     background-color: var(--cor-6);
-    position: fixed;
+    position: sticky;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
