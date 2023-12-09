@@ -299,29 +299,7 @@ body.claro {
 
 
 @media screen and (max-width: 767px){
-    /* .tela{
-        position: relative;
-        width: calc(100vw - 55px);
-        height: 90vh;
-        left: 19px;
-        z-index: -2;
-    } */
-
-    /* .menu{
-        width: 36px;
-        height: 95vh;
-        background-color: var(--cor-6);
-        position: fixed;
-        font-size: 20px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        position: fixed;
-        border-right: solid 1px;
-        border-color: var(--cor-7);
-    } */
-
+    
     .menu__tema{
         position: fixed;
         display: flex;
@@ -329,6 +307,7 @@ body.claro {
         justify-content: center;
         height: 50px;
         color: var(--cor-branco);
-        bottom: 100px;
+        bottom: 50px;
     }
+
 } 
