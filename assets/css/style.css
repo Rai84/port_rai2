@@ -299,7 +299,7 @@ body.claro {
 
 
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .menu__tema{
         position: fixed;
         display: flex;
@@ -309,5 +309,5 @@ body.claro {
         color: var(--cor-branco);
         bottom: 1vh;
     }
-}
+} */
 
