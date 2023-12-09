@@ -298,14 +298,15 @@ body.claro {
 
 
 
-@media screen and (max-width: 1500px) and (min-width: 900px){
-
+@media screen and (max-width: 767px) {
+    .menu__tema{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        color: var(--cor-branco);
+        bottom: 100px;
+    }
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
-
-}
-
-@media screen and (max-width: 600px) and (min-width: 0px){
-
-} 
