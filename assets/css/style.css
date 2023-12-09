@@ -302,7 +302,7 @@ body.claro {
     .tela{
         position: relative;
         width: calc(100vw - 55px);
-        height: calc(100vh - 5vh);
+        height: 90vh;
         left: 19px;
         z-index: -2;
     }
