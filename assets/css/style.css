@@ -1,0 +1,311 @@
+:root {
+    --cor-fundo: #262626;
+    --cor-texto: #e0e0e0;
+    --cor-fundo2: #5F605D;
+
+    --cor-3: #727271;
+    --cor-4: #5F605D;
+    --cor-5: #383838;
+    --cor-6: #1E1E1E;
+    --cor-7: #F65100;
+    --cor-preto: #262626;
+    --cor-branco: #e0e0e0;
+}
+
+body {
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin-top: env(safe-area-inset-top);
+}
+
+body.escuro {
+    /* Estilos para o modo escuro */
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+}
+
+body.claro {
+    /* Estilos para o modo claro */
+    background-color: (--cor-fundo);
+    color: var(--cor-texto);
+
+}
+
+::-webkit-scrollbar{
+    position: absolute;
+    width: 17px;
+}
+
+::-webkit-scrollbar-track{
+    /* border-radius: 35px; */
+    background-color: var(--cor-5);   
+}
+
+::-webkit-scrollbar-thumb { 
+	background-color : var(--cor-7) ; 
+    border: solid 4px;
+    border-color: var(--cor-5);	
+    border-radius: 35px;
+}
+
+
+/******************************************************menu****/
+.menu{
+    width: 36px;
+    height: 100vh;
+    background-color: var(--cor-6);
+    position: fixed;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    border-right: solid 1px;
+    border-color: var(--cor-7);
+}
+
+/************************************************menu__princ***/
+.menu__princ{ 
+    position: relative;
+    background-color: var(--cor-fundo);
+    width: 40px; height: 240px;
+    left: 20px; top: 10px;
+    border-radius: 50px;
+    display: flex; flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+#mostrarBtn{
+    position: relative;
+    top: 20px;
+}
+
+.caixa {
+    display: none;
+    width: 200px; height: 240px; padding-top: 20px;
+    position: absolute; z-index: -1;
+    top: 0px; left: 20px;
+    border-radius: 0px 15px 15px 0px;
+    background: var(--cor-fundo2); 
+    flex-direction: column;
+    line-height: 32px;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    
+}
+
+.menu_btn:hover{
+    color: var(--cor-7);
+    cursor: pointer;
+}
+
+/*************************************************************menu__exp***/
+.menu__exp{ 
+    position: static;
+    background-color: var(--cor-7);
+    width: 20px; height: 80px;
+    border-radius: 50px;
+    display: flex; align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.expandido {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 36px;
+    width: calc(70vw - 40px);
+    height: 100vh;
+    background-color: var(--cor-4);
+    z-index: 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/***********************************************************menu__tema***/
+
+.menu__tema{
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: var(--cor-branco);
+    
+}
+
+.config__icon {
+    color: var(--cor-branco);
+    cursor: pointer;
+}
+
+.config__icon.active {
+    color: var(--cor-7);
+}
+
+.config__exp{
+    display: none;
+    position: fixed;
+    top: 80vh;
+    left: 50px;
+    width: 125px;
+    height: 125px;
+    background-color: var(--cor-4);
+    z-index: 0;
+    border-radius: 25px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.config__exp.show {
+    display: block;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    display: none;
+}
+
+.checkbox:checked+label,
+.checkbox:not(:checked)+label {
+    background-color: #FBF9FB;
+    position: relative;
+    display: flex;
+    width: 80px;
+    height: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    left: 20px;
+    top: 10px;
+}
+
+
+.checkbox:checked+label:before,
+.checkbox:not(:checked)+label:before {
+    font-family: bootstrap-icons !important;
+    content: '\F497';
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--cor-5);
+    z-index: 20;
+    top: 1px;
+    left: 1px;
+    line-height: 36px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: var(--cor-7);
+}
+
+.checkbox:checked+label:before {
+    transform: translateX(60px) rotate(-110deg);
+    content: '\F1D2';
+}
+
+/***********************************************************btn__contato***/
+
+.teste{
+    background: var(--cor-5);
+    color: var(--cor-branco);
+    border-radius: 15px;
+    width: 250px;
+    height: 55px;
+    position: fixed;
+    right: 85px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-color: var(--cor-7);
+    gap: 10px;
+}
+
+.menu__contato {
+    background-color: var(--cor-5);
+    border: solid 1.5px var(--cor-7);
+    border-radius: 50px;
+    color: var(--cor-branco);
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+}
+
+.menu__contato:hover{
+    background-color: var(--cor-7);
+    color: var(--cor-branco);
+}
+
+
+
+/********************************************main*******************************************/
+
+.tela{
+    position: relative;
+    width: calc(100vw - 55px);
+    height: 100vh;
+    left: 19px;
+    z-index: -2;
+}
+
+/********************************************tela1***/
+
+.tela1{
+    /* background-color: aqua; */
+}
+
+/********************************************tela2***/
+
+.tela2{
+    /* background-color: brown; */
+}
+
+/********************************************tela3***/
+
+.tela3{
+    /* background-color: blue; */
+}
+
+/********************************************tela4***/
+
+.tela4{
+    /* background-color: yellow; */
+}
+
+/********************************************tela5***/
+
+.tela5{
+    /* background-color: green; */
+}
+
+
+
+
+
+
+@media screen and (max-width: 1500px) and (min-width: 900px){
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px){
+    
+} 

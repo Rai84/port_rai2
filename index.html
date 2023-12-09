@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" style="--cor-texto: #e0e0e0; --cor-fundo: #262626">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    
+</head>
+<body class="escuro">
+
+    <nav class="menu">
+        
+        <div class="menu__princ">
+        
+            <button type="button" class="menu_btn"> <!-- btn home -->
+                <a href="#section1"><i class="bi bi-house icon_menu"></i></a>
+            </button>
+        
+            <button type="button" class="menu_btn"><!-- btn sobre -->
+                <a href="#section2"><i class="bi bi-person icon_menu"></i></a>
+            </button>
+        
+            <button type="button" class="menu_btn"> <!-- btn projetos -->
+                <a href="#section3"><i class="bi bi-folder icon_menu"></i></a>
+            </button>
+        
+            <button type="button" class="menu_btn"> <!-- btn jogos -->
+                <a href="#section4"><i class="bi bi-controller icon_menu"></i></a>
+            </button>
+        
+            <button type="button" class="menu_btn"> <!-- btn contato -->
+                <a href="#section5"><i class="bi bi-globe icon_menu"></i></a>
+            </button>
+        
+            <button id="mostrarBtn" class="menu_btn">
+                <i class="bi bi-chevron-right" id="icone"></i>
+            </button>
+        
+            <div class="caixa" id="caixa">
+                <ul>
+                    <li class="menu_btn"><a href="#section1">Home</a></li>
+                    <li class="menu_btn"><a href="#section2">Sobre</a></li>
+                    <li class="menu_btn"><a href="#section3">Projetos</a></li>
+                    <li class="menu_btn"><a href="#section4">Jogos</a></li>
+                    <li class="menu_btn"><a href="#section5">Contato</a></li>
+                </ul>
+            </div>
+        
+        
+        </div>
+
+        <div id="expandir" class="menu__exp">
+            
+            <button id="expandir" class="expandir">
+                <i class="bi bi-chevron-compact-right" id="icone2"></i>
+            </button>
+
+            <div class="expandido" id="expandido">
+                <div class="btn_opcao_ext">
+                        
+                    <button id="descobrir" class="descobrir"> Descobrir <i class="bi bi-chevron-compact-left"></i></button>
+                    <button id="jogo" class="jogo"> Jogos <i class="bi bi-controller"></i></button>
+                    
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="menu__tema">
+            <button id="config">
+                <i class="config__icon bi bi-gear"></i>
+                <div class="config__exp">
+                    <input type="checkbox" class="checkbox" id="modo-toggle">
+                    <label for="modo-toggle"></label>
+                </div>
+            </button>
+        </div>
+
+    </nav>
+
+    <nav> 
+        <div id="esconder" class="teste"><h1>Contate-me quando quiser.</h1><i class="bi bi-arrow-right"></i></div>
+        <button class="menu__contato"><i class="bi bi-telephone"></i></button>
+    </nav>
+
+    <main class="tela">
+        <div class="tela tela1">
+            
+        </div>
+        <div class="tela tela2"></div>
+        <div class="tela tela3"></div>
+        <div class="tela tela4"></div>
+        <div class="tela tela5"></div>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/tema.js"></script>
+    <script src="./assets/js/expandir.js"></script>
+    <script src="./assets/js/esconder.js"></script>
+
+</body>
+</html>
