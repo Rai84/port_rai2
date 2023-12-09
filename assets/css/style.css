@@ -55,7 +55,7 @@ body.claro {
     width: 36px;
     height: 100vh;
     background-color: var(--cor-6);
-    position: sticky;
+    position: fixed;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -96,7 +96,7 @@ body.claro {
     align-items: center;
     font-size: 20px;
     box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    
+
 }
 
 .menu_btn:hover{
@@ -106,14 +106,13 @@ body.claro {
 
 /*************************************************************menu__exp***/
 .menu__exp{ 
-    position: fixed;
+    position: static;
     background-color: var(--cor-7);
     width: 20px; height: 80px;
     border-radius: 50px;
     display: flex; align-items: center;
     justify-content: center;
     z-index: -1;
-    top: 50vh;
 }
 
 .expandido {
@@ -132,13 +131,13 @@ body.claro {
 /***********************************************************menu__tema***/
 
 .menu__tema{
-    position: fixed;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     color: var(--cor-branco);
-    bottom: 20px;
+
 }
 
 .config__icon {
@@ -298,16 +297,15 @@ body.claro {
 
 
 
-/* @media screen and (max-width: 767px){
-    
-    .menu__tema{
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        color: var(--cor-branco);
-        bottom: 50px;
-    }
 
-}  */
+@media screen and (max-width: 1500px) and (min-width: 900px){
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+}
+
+@media screen and (max-width: 600px) and (min-width: 0px){
+
+} 
