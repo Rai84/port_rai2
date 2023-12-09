@@ -299,13 +299,13 @@ body.claro {
 
 
 @media screen and (max-width: 767px){
-    .tela{
+    /* .tela{
         position: relative;
         width: calc(100vw - 55px);
         height: 90vh;
         left: 19px;
         z-index: -2;
-    }
+    } */
 
     .menu{
         width: 36px;
