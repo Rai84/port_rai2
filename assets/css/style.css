@@ -293,21 +293,3 @@ body.claro {
 .tela5{
     /* background-color: green; */
 }
-
-
-
-
-
-
-/* @media screen and (max-width: 767px) {
-    .menu__tema{
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 50px;
-        color: var(--cor-branco);
-        bottom: 1vh;
-    }
-} */
-
