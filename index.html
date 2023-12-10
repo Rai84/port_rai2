@@ -59,7 +59,7 @@
         <div class="menu__exp"> <!--menu explandir-->
         
             <div class="btn__exp">
-                <button id="expandir"s>
+                <button id="expandir">
                     <i class="bi bi-chevron-compact-right" id="icone2"></i>
                 </button>
             </div>
@@ -81,17 +81,22 @@
                 <div class="config__exp">
                     <input type="checkbox" class="checkbox" id="modo-toggle">
                     <label for="modo-toggle"></label>
+
+                    <input type="range" min="0" max="1" step="0.01" value="0" id="opacityRanger">
                 </div>
             </button>
         </div>
 
     </nav>
 
-    <nav> 
+    <nav class="contato"> 
         <div id="esconder" class="teste"><h1>Contate-me quando quiser.</h1><i class="bi bi-arrow-right"></i></div>
-        <button class="menu__contato"><i class="bi bi-telephone"></i></button>
+        <button id="ativar_contato" class="menu__contato"><i class="bi bi-telephone"></i></button>
+
+        <div id="contato_ativo" class="contato_ativo"></div>
     </nav>
 
+    <div class="app"></div>
     <main class="tela">
         <div class="tela tela1">
             <h1>tirando1</h1>
@@ -102,7 +107,7 @@
         <div class="tela tela5"></div>
     </main>
     
-
+    <footer class="rodapé"></footer>
 
 
 
@@ -146,7 +151,7 @@
     <script src="./assets/js/index.js"></script>
     <script src="./assets/js/tema.js"></script>
     <script src="./assets/js/expandir.js"></script>
-    <script src="./assets/js/esconder.js"></script>
+    <script src="./assets/js/contato.js"></script>
 
 </body>
 </html>

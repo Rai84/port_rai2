@@ -1,6 +1,6 @@
 document.getElementById("expandir").addEventListener("click", function() {
     var expandido = document.getElementById("expandido");
-    // var expandir = document.getElementById("expandir");
+    var expandir = document.getElementById("expandir");
     var icone2 = document.getElementById("icone2");
 
     if (expandido.style.display === "none" || expandido.style.display === "") {

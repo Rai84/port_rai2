@@ -53,7 +53,16 @@ function timeout() {
     }
   });
 
+
+  document.getElementById('opacityRanger').addEventListener('input', (e) => {
+    const opacity = parseFloat(e.target.value);
+    console.log(opacity);
+    document.querySelector('.app').style.opacity = opacity;
+    resetTimer();
+  });
+
   resetTimer();
 }
 
 timeout();
+

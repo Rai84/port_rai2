@@ -22,14 +22,12 @@ body.escuro {
     /* Estilos para o modo escuro */
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
-
 }
 
 body.claro {
     /* Estilos para o modo claro */
     background-color: (--cor-fundo);
     color: var(--cor-texto);
-
 }
 
 ::-webkit-scrollbar{
@@ -137,6 +135,12 @@ body.claro {
     top: 50vh;
 }
 
+#expandir{
+    width: 20px;
+    height: 80px;
+    cursor: pointer;
+}
+
 .expandido {
     display: none;
     position: fixed;
@@ -234,6 +238,41 @@ body.claro {
     content: '\F1D2';
 }
 
+.app {
+    height: 500vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 77px; /* Definir a largura do ranger */
+    height: 19px; /* Definir a altura do ranger */
+    background: #FBF9FB; /* Definir a cor de fundo do ranger */
+    border-radius: 15px;
+    border: solid 1px;
+    border-color: #FBF9FB;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px; /* Definir a largura da alça do ranger */
+    height: 18px; /* Definir a altura da alça do ranger */
+    background: #4caf98; /* Definir a cor de fundo da alça do ranger */
+    cursor: pointer; /* Definir o cursor para pointer */
+    border-radius: 15px;
+}
+
+#opacityRanger{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
 /***********************************************************btn__contato***/
 
 .teste{
@@ -273,7 +312,19 @@ body.claro {
     color: var(--cor-branco);
 }
 
+.contato_ativo{
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 50px;
+    width: 125px;
+    height: 125px;
+    background-color: var(--cor-4);
+    z-index: 0;
+    border-radius: 25px;
+    transition: opacity 0.5s ease-in-out;
 
+}
 
 /********************************************main*******************************************/
 
