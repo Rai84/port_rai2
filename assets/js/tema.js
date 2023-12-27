@@ -40,14 +40,14 @@ function timeout() {
       console.log('Modo Claro');
       body.classList.add('transicao-cores');
       body.classList.add('claro');
-      document.documentElement.style.setProperty('--cor-texto', '#262626');
+      document.documentElement.style.setProperty('--cor-texto', '#000000');
       document.documentElement.style.setProperty('--cor-fundo', '#e0e0e0');
       document.documentElement.style.setProperty('--cor-fundo2', '#E6E6E6');
     } else {
       console.log('Modo Escuro');
       body.classList.remove('claro');
       body.classList.add('transicao-cores');
-      document.documentElement.style.setProperty('--cor-texto', '#e0e0e0');
+      document.documentElement.style.setProperty('--cor-texto', '#ffffff');
       document.documentElement.style.setProperty('--cor-fundo', '#262626');
       document.documentElement.style.setProperty('--cor-fundo2', '#5F605D');
     }
