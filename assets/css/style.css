@@ -48,10 +48,10 @@ body.claro {
 }
 
 
-/******************************************************menu****/
+/**********************************************************************menu****/
 .menu{
     width: 36px;
-    height: 100vh;
+    height: 100%;
     background-color: var(--cor-6);
     position: fixed;
     font-size: 20px;
@@ -64,7 +64,7 @@ body.claro {
     border-color: var(--cor-7);
 }
 
-/************************************************menu__princ***/
+/***************************************************************menu__princ****/
 .menu__princ{
     display: flex;
     position: fixed;
@@ -121,7 +121,7 @@ body.claro {
     cursor: pointer;
 }
 
-/*************************************************************menu__exp***/
+/*****************************************************************menu__exp****/
 
 .btn__exp{
     position: fixed;
@@ -147,14 +147,14 @@ body.claro {
     top: 0px;
     left: 37px;
     width: 70vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--cor-4);
     z-index: -20;
     justify-content: center;
     align-items: flex-start;
 }
 
-/***********************************************************menu__tema***/
+/****************************************************************menu__tema****/
 
 .menu__tema{
     position: fixed;
@@ -239,13 +239,14 @@ body.claro {
 }
 
 .app {
-    height: 500vh;
+    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     display: flex;
-    position: absolute;
+    position: fixed;
     pointer-events: none;
+    z-index: 200;
 }
 
 input[type=range] {
@@ -273,7 +274,7 @@ input[type=range]::-webkit-slider-thumb {
     left: 20px;
 }
 
-/***********************************************************btn__contato***/
+/**************************************************************btn__contato****/
 
 .teste{
     background: var(--cor-5);
@@ -324,104 +325,4 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 25px;
     transition: opacity 0.5s ease-in-out;
 
-}
-
-/********************************************main*******************************************/
-
-.tela{
-    position: relative;
-    width: calc(100vw - 55px);
-    height: 100vh;
-    left: 19px;
-    z-index: -2;
-}
-
-/********************************************tela1***/
-
-.tela1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.box_tela1 {
-    position: absolute;
-    width: calc(100vw - 54px);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.teste23 {
-    position: relative;
-    font-size: 7em;
-    display: flex;
-    width: 20vw;
-    align-items: center;
-    justify-content: center;
-}
-
-
-#logo_tela1 {
-    width: 1em;
-    height: auto;
-}
-
-.box_tela1 p {
-    font-size: 4em;
-}
-
-@media screen and (max-width: 600px) {
-    .box_tela1 p {
-        font-size: 2em;
-    }
-
-}
-
-/********************************************tela2***/
-
-.tela2{
-    background-color: brown;
-}
-
-/* .box1_tela2{
-    background-color: aqua;
-    width: 100vh;
-    height: 85vh;
-    border-radius: 20px;
-    position: relative;
-    left: 50px;
-    top: 50px;
-}
-
-.box2_tela2{
-    background-color: yellow;
-    width: 80vh;
-    height: 45vh;
-    border-radius: 20px;
-    position: relative;
-    left: 800px;
-    bottom: 260px;
-} */
-
-/********************************************tela3***/
-
-.tela3{
-    /* background-color: blue; */
-}
-
-/********************************************tela4***/
-
-.tela4{
-    /* background-color: yellow; */
-}
-
-/********************************************tela5***/
-
-.tela5{
-    /* background-color: green; */
 }

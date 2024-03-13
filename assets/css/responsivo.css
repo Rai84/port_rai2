@@ -1,0 +1,69 @@
+/**********************************************************************Tela 1 */
+
+@media only screen and (max-width: 780px) {
+  .tela {
+    position: relative;
+    width: calc(100% - 35px);
+    height: 100vh;
+    left: 27px;
+    z-index: -2;
+  }
+
+  .tela1_ola h1{
+    font-size: 6rem;
+  }
+  
+  .tela1_bem-vindo h2{
+    font-size: 1rem;
+  }
+
+  .tela1_bem-vindo img{
+    width: 90px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  
+  .tela1_apresentacao h3{
+    font-size: 3rem;
+    
+  }
+  
+  .tela1_apresentacao p{
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .tela {
+    position: relative;
+    width: calc(100% - 35px);
+    height: 100vh;
+    left: 27px;
+    z-index: -2;
+  }
+
+  .tela1_ola h1{
+    font-size: 6rem;
+  }
+  
+  .tela1_bem-vindo h2{
+    font-size: 1rem;
+  }
+
+  .tela1_bem-vindo img{
+    width: 90px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  
+  .tela1_apresentacao h3{
+    font-size: 3rem;
+    
+  }
+  
+  .tela1_apresentacao p{
+    font-size: 0.75rem;
+  }
+} 
+

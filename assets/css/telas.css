@@ -1,0 +1,122 @@
+/**********************************************************************main****/
+
+.tela{
+  position: relative;
+  width: calc(100% - 35px);
+  height: 100vh;
+  left: 16px;
+  z-index: -2;
+}
+
+/*********************************************************************tela1****/
+
+.tela1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrainsMono' , monospace;
+}
+
+.tela1_apresentacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tela1_ola{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.tela1_ola h1{
+  font-size: 12rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.tela1_bem-vindo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tela1_bem-vindo h2{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tela1_bem-vindo h2 span{
+  color: var(--cor-7);
+  
+}
+
+.tela1_bem-vindo img{
+  width: 150px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.tela1_apresentacao h3{
+  font-size: 6rem;
+  
+}
+
+.tela1_apresentacao h3 span{
+  color: var(--cor-7);
+  margin-left: 20px;
+}
+
+.tela1_apresentacao p{
+  font-size: 1.45rem;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: solid 3px var(--cor-7);
+  border-top: solid 3px var(--cor-7);
+}
+
+/*********************************************************************tela2****/
+
+.tela2{
+  
+}
+
+/* .box1_tela2{
+  background-color: aqua;
+  width: 100vh;
+  height: 85vh;
+  border-radius: 20px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+.box2_tela2{
+  background-color: yellow;
+  width: 80vh;
+  height: 45vh;
+  border-radius: 20px;
+  position: relative;
+  left: 800px;
+  bottom: 260px;
+} */
+
+/*********************************************************************tela3****/
+
+.tela3{
+  /* background-color: blue; */
+}
+
+/*********************************************************************tela4****/
+
+.tela4{
+  /* background-color: yellow; */
+}
+
+/*********************************************************************tela5****/
+
+.tela5{
+  /* background-color: green; */
+}
